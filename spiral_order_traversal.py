@@ -1,3 +1,4 @@
+from pprint import pprint
 class spiral_order_traversal:
     # @param A : integer
     # @return a list of list of integers
@@ -31,3 +32,6 @@ class spiral_order_traversal:
                 lst[k][left_boundary] = val
                 val += 1
             left_boundary += 1
+
+obj = spiral_order_traversal()
+pprint(obj.generateMatrix(5))
